@@ -1,6 +1,4 @@
-//the following javascript code is able to be executed in a browser and return the user token as a popup on screen
-
-(function() {
+javascript:(function() {
   const originalFetch = window.fetch;
   window.fetch = async function(...args) {
     const response = await originalFetch.apply(this, args);
